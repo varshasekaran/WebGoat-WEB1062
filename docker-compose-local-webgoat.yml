@@ -1,0 +1,9 @@
+version: '2.1'
+
+services:
+  webgoat:
+    image: webgoat/webgoat-v8.0.0.snapshot
+    extends:
+      file: docker-compose.yml
+      service: webgoat
+  
