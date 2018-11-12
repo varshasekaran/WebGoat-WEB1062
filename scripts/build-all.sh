@@ -13,7 +13,7 @@ if [[ "${SUCCESS}" -eq 00 ]] ; then
 fi
 
 
-mvn clean install -DskipTests=true
+mvn clean install
 if [[ "$?" -ne 0 ]] ; then
   exit y$?
 fi
