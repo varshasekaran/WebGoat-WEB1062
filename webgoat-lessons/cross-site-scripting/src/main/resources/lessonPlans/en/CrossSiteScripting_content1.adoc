@@ -1,13 +1,8 @@
 == What is XSS
 
-Cross-site script (also commonly known as XSS) is a vulnerability/flaw that combines ...
-# the allowance of html/script tags as input that are ...
-# rendred into a browser without encoding or sanitization
+Cross-Site Scripting (XSS) attacks are a type of injection, in which malicious scripts are injected into otherwise benign and trusted websites. XSS attacks occur when an attacker uses a web application to send malicious code, generally in the form of a browser side script, to a different end user. Flaws that allow these attacks to succeed are quite widespread and occur anywhere a web application uses input from a user within the output it generates without validating or encoding it.
 
-=== Cross site scripting (XSS) is the most prevalent and pernicious web application security issue
-
-While there is a simple well-known defense for this attack, there are still many instances of it on the web.  In terms of fixing it,
-coverage of fixes also tends to be a problem. We'll talk more about the defense in a little bit.
+An attacker can use XSS to send a malicious script to an unsuspecting user. The end user’s browser has no way to know that the script should not be trusted, and will execute the script. Because it thinks the script came from a trusted source, the malicious script can access any cookies, session tokens, or other sensitive information retained by the browser and used with that site. These scripts can even rewrite the content of the HTML page.
 
 === XSS has a significant impact
 

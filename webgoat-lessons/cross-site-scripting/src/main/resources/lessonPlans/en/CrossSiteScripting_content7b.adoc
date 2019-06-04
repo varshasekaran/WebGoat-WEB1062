@@ -1,4 +1,5 @@
 # Stored XSS - Continue 
+
 See the comments below.
 
 Add a comment with a javascript payload. Again ... you want to call the _webgoat.customjs.phoneHome_ function.
