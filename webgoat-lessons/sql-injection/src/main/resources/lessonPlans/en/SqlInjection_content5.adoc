@@ -4,13 +4,13 @@
 
 ==== Potential String Injection
 -------------------------------------------------------
-"select * from users where name = '" + userName + "'";
+"select * from user_data where name = '" + userName + "'";
 -------------------------------------------------------
 
 ==== Potential Numeric Injection
 -------------------------------------------------------
 
-"select * from users where employee_id = "  + userID;
+"select * from user_data where employee_id = "  + userID;
 -------------------------------------------------------
 
 === Attacker supplies unexpected text

@@ -58,10 +58,10 @@ public class SqlInjectionLesson5b extends AssignmentEndpoint {
 
     }
 
-    protected AttackResult injectableQuery(String accountName) {
+    protected AttackResult injectableQuery(String userID) {
         try {
             Connection connection = DatabaseUtilities.getConnection(getWebSession());
-            String query = "SELECT * FROM user_data WHERE userid = " + accountName;
+            String query = "SELECT * FROM user_data WHERE userid = " + userID;
 
             try {
                 Statement statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,

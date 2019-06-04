@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 cd ..
-docker-compose up
+docker-compose -f docker-compose-local.yml up 
