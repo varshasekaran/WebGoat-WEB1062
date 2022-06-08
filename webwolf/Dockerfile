@@ -1,4 +1,4 @@
-FROM openjdk:8-jre-slim
+FROM openjdk:jdk-slim-buster
 
 ARG webwolf_version=v8.0.0.SNAPSHOT
 
